@@ -1,0 +1,9 @@
+var Data= new Array('Data', 
+
+new Array ("pierwszaA", "drugiA"),
+
+new Array ("pierwszaB", "drugiB"),
+
+new Array ("pierwszaC", "drugiC"),
+
+);

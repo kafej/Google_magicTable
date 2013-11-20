@@ -1,0 +1,236 @@
+<!DOCTYPE
+	html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl">
+<head>
+	<title>Laboratorium</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="content-language" content="pl" />
+	<meta name="robots" content="none" />
+	<meta name="author" content="PWSZ" />
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script type="text/javascript" 
+    src='http://magic-table.googlecode.com/svn/trunk/magic-table/javascript/magic_table.js'></script>
+	<script type="text/javascript">
+<!--
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Kraj');
+        data.addColumn('number', 'Liczba mieszkańców');
+        data.addColumn('number', 'Powierzchnia');
+		data.addColumn('number', 'PKB');
+        data.addRows(8);
+        data.setValue(0, 0, 'Polska');
+        data.setValue(0, 1, 384.63989);
+        data.setValue(0, 2, 32.2675);
+		data.setValue(0, 3, 43.02);
+        data.setValue(1, 0, 'Niemcy');
+        data.setValue(1, 1, 817.43000);
+        data.setValue(1, 2, 35.711422);
+		data.setValue(1, 3, 341.46);
+        data.setValue(2, 0, 'Rosja');
+        data.setValue(2, 1, 1419.44);
+        data.setValue(2, 2, 1707.5400);
+		data.setValue(2, 3, 227.46);
+        data.setValue(3, 0, 'Czechy');
+        data.setValue(3, 1, 105.06813);
+        data.setValue(3, 2, 7.8866);
+		data.setValue(3, 3, 21.71);
+        data.setValue(4, 0, 'Słowacja');
+        data.setValue(4, 1, 54.55000);
+        data.setValue(4, 2, 4.9035);
+		data.setValue(4, 3, 8.89);
+        data.setValue(5, 0, 'Francja');
+        data.setValue(5, 1, 646.67000);
+        data.setValue(5, 2, 67.5417);
+		data.setValue(5, 3, 297.8);
+        data.setValue(6, 0, 'Wielka Brytania');
+        data.setValue(6, 1, 613.83200);
+        data.setValue(6, 2, 24.4820);
+		data.setValue(6, 3, 278.7);
+        data.setValue(7, 0, 'Hiszpania');
+        data.setValue(7, 1, 469.51532);
+        data.setValue(7, 2, 50.4645);
+		data.setValue(7, 3, 162.25);
+		
+        var chart = new google.visualization.ColumnChart(document.getElementById('slupki'));
+        chart.draw(data, {width: 400, height: 240, title: 'Company Performance',
+                          hAxis: {title: 'kraj', titleTextStyle: {color: 'red'}}
+                         });
+      }
+	</script>
+	<script type='text/javascript'>
+      google.load('visualization', '1', {packages:['intensitymap']});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', '', 'Kraj');
+        data.addColumn('number', 'Liczba mieszkancow', 'a');
+        data.addColumn('number', 'Powierzchnia (km^2)', 'b');
+        data.addColumn('number', 'PKB (mld USD)', 'c');
+        data.addRows(5);
+        data.setValue(0, 0, 'PL');
+        data.setValue(0, 1, 38463689);
+        data.setValue(0, 2, 322575);
+        data.setValue(0, 3, 430.2);
+        data.setValue(1, 0, 'DE');
+        data.setValue(1, 1, 81743000);
+        data.setValue(1, 2, 357114.22);
+        data.setValue(1, 3, 3414.6);
+        data.setValue(2, 0, 'RU');
+        data.setValue(2, 1, 141944207);
+        data.setValue(2, 2, 17075400);
+        data.setValue(2, 3, 2274.6);
+        data.setValue(3, 0, 'CZ');
+        data.setValue(3, 1, 10506813);
+        data.setValue(3, 2, 78866);
+        data.setValue(3, 3, 217.1);
+        data.setValue(4, 0, 'SK');
+        data.setValue(4, 1, 5455000);
+        data.setValue(4, 2, 49035);
+        data.setValue(4, 3, 88.9);
+        data.setValue(4, 0, 'FR');
+        data.setValue(4, 1, 64667000);
+        data.setValue(4, 2, 675417);
+        data.setValue(4, 3, 2978);
+        data.setValue(4, 0, 'GB');
+        data.setValue(4, 1, 61383200);
+        data.setValue(4, 2, 244820);
+        data.setValue(4, 3, 2787);
+        data.setValue(4, 0, 'ES');
+        data.setValue(4, 1, 46951532);
+        data.setValue(4, 2, 504645);
+        data.setValue(4, 3, 1622.5);
+
+        var chart = new google.visualization.IntensityMap(document.getElementById('mapa'));
+        chart.draw(data, {});
+      }
+    </script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      function drawTable() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Kraj');
+        data.addColumn('number', 'Liczba mieszkańców (mln)');
+        data.addColumn('number', 'Powierzchnia (km^2)');
+		data.addColumn('number', 'PKB (mld USD)');
+        data.addRows(8);
+        data.setValue(0, 0, 'Polska');
+        data.setValue(0, 1, 38.463989);
+        data.setValue(0, 2, 322.675);
+		data.setValue(0, 3, 430.2);
+        data.setValue(1, 0, 'Niemcy');
+        data.setValue(1, 1, 81.743000);
+        data.setValue(1, 2, 357.11422);
+		data.setValue(1, 3, 3414.6);
+        data.setValue(2, 0, 'Rosja');
+        data.setValue(2, 1, 141.944207);
+        data.setValue(2, 2, 17075.400);
+		data.setValue(2, 3, 2274.6);
+        data.setValue(3, 0, 'Czechy');
+        data.setValue(3, 1, 10.506813);
+        data.setValue(3, 2, 78.866);
+		data.setValue(3, 3, 217.1);
+        data.setValue(4, 0, 'Słowacja');
+        data.setValue(4, 1, 5.455000);
+        data.setValue(4, 2, 49.035);
+		data.setValue(4, 3, 88.9);
+        data.setValue(5, 0, 'Francja');
+        data.setValue(5, 1, 64.667000);
+        data.setValue(5, 2, 675.417);
+		data.setValue(5, 3, 2978);
+        data.setValue(6, 0, 'Wielka Brytania');
+        data.setValue(6, 1, 61.383200);
+        data.setValue(6, 2, 244.820);
+		data.setValue(6, 3, 2787);
+        data.setValue(7, 0, 'Hiszpania');
+        data.setValue(7, 1, 46.951532);
+        data.setValue(7, 2, 504.645);
+		data.setValue(7, 3, 1622.5);
+
+        var table = new google.visualization.Table(document.getElementById('tabelka'));
+        table.draw(data, {showRowNumber: true});
+      }
+    </script>
+  <script type="text/javascript">
+    google.load("visualization", "1");
+    google.setOnLoadCallback(drawVisualization);
+	
+    function drawVisualization()
+    {
+      var rows = 16;
+      var columns = 5;
+      var data = new google.visualization.DataTable();
+      data.addColumn('number', 'column 1');
+      data.addColumn('number', 'column 2');
+      data.addColumn('number', 'column 3');
+      data.addColumn('number', 'column 4');
+      data.addColumn('number', 'column 5');
+      data.addRows(rows);
+
+      var i = rows - 1;
+      var j;
+		
+      do
+      {
+         j = columns - 1;
+         do
+         {
+            data.setCell(i, j, Math.round(Math.random()*10));
+         }
+         while (j-- > 0) 
+      }
+      while (i-- > 0)
+
+      var vis = new greg.ross.visualisation.MagicTable(document.getElementById('moja'));
+
+      options = {};
+      options.tableTitle = "Bar-fill";
+      options.enableFisheye = true;
+      options.enableBarFill = true;
+      options.defaultRowHeight = 25;
+      options.columnWidths = [{column : 0, width : 130}];
+      options.defaultColumnWidth = 60;
+      options.rowHeaderCount = 0;
+      options.columnHeaderCount = 0;
+      options.tablePositionX = 0;
+      options.tablePositionY = 0;
+      options.tableHeight = 403;
+      options.tableWidth = 315;
+      options.colourRamp = getColourRamp();
+
+      vis.draw(data, options);
+  }
+  
+  function getColourRamp()
+  {
+      var colour1 = {red:0, green:0, blue:255};
+      var colour2 = {red:0, green:255, blue:255};
+      var colour3 = {red:0, green:255, blue:0};
+      var colour4 = {red:255, green:255, blue:0};
+      var colour5 = {red:255, green:0, blue:0};
+      return [colour1, colour2, colour3, colour4, colour5];
+  }
+  
+		fh = fopen(getScriptPath("Dane.txt")); // Open the file for reading
+		if(fh!=-1) // If the file has been successfully opened
+		{
+			length = flength(fh);         // Get the length of the file    
+			str = fread(fh, length);     // Read in the entire file
+			fclose(fh);                    // Close the file
+			   
+			write(str); 
+		var chart = document.getElementById('plik');			
+		}
+  </script>
+	<Body>
+		<div id="slupki"></div>
+		<div id="mapa"></div>
+		<div id="tabelka"></div>
+		<div id="moja"></div>
+		<div id="plik"></div>
+	</body>
+</html>
